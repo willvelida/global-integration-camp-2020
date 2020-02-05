@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GIDCosmos.Core.Models
+namespace GIBCosmos.Core.Models
 {
     public class Products
     {

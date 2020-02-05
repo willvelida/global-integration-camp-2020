@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIDCosmos.Core", "GIDCosmos.Core\GIDCosmos.Core.csproj", "{E0A72423-2748-4B35-B68C-23C3C3C4774A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBCosmos.Core", "GIDCosmos.Core\GIBCosmos.Core.csproj", "{E0A72423-2748-4B35-B68C-23C3C3C4774A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
