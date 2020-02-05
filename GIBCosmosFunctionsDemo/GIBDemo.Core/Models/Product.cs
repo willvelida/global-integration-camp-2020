@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GIBCosmos.Core.Models
+namespace GIBDemo.Core.Models
 {
-    public class Products
+    public class Product
     {
         public string ProductId { get; set; }
         public string ProductName { get; set; }
-        public double Price { get; set; }
-        public string ProductManufacturer { get; set; }
         public string ProductType { get; set; }
+        public double Price { get; set; }
+        public string Manufacturer { get; set; }
+
     }
 }
