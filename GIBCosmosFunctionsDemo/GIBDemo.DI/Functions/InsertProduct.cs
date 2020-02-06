@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Azure.Cosmos;
 using GIBDemo.DI.Helpers;
 using GIBDemo.Core.Models;
+using GIBDemo.Core.Helpers;
 
 namespace GIBDemo.DI.Functions
 {
