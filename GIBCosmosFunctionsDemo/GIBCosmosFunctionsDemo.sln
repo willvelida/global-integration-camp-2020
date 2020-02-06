@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBDemo.Core", "GIBDemo.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBDemo.DI", "GIBDemo.DI\GIBDemo.DI.csproj", "{93EC2DEF-A746-4382-9CAE-CFC390F35ED1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBDemo.Triggers", "GIBDemo.Triggers\GIBDemo.Triggers.csproj", "{771D73CF-7A91-4DC3-B5AE-557853A3C00D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{93EC2DEF-A746-4382-9CAE-CFC390F35ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93EC2DEF-A746-4382-9CAE-CFC390F35ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93EC2DEF-A746-4382-9CAE-CFC390F35ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771D73CF-7A91-4DC3-B5AE-557853A3C00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771D73CF-7A91-4DC3-B5AE-557853A3C00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771D73CF-7A91-4DC3-B5AE-557853A3C00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771D73CF-7A91-4DC3-B5AE-557853A3C00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
