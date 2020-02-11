@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBDemo.Core", "GIBDemo.Core\GIBDemo.Core.csproj", "{6931F66E-320A-4857-9A0E-DB6AE84AE96F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GIBDemo.Core", "GIBDemo.Core\GIBDemo.Core.csproj", "{6931F66E-320A-4857-9A0E-DB6AE84AE96F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBDemo.DI", "GIBDemo.DI\GIBDemo.DI.csproj", "{93EC2DEF-A746-4382-9CAE-CFC390F35ED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GIBDemo.DI", "GIBDemo.DI\GIBDemo.DI.csproj", "{93EC2DEF-A746-4382-9CAE-CFC390F35ED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIBDemo.Triggers", "GIBDemo.Triggers\GIBDemo.Triggers.csproj", "{771D73CF-7A91-4DC3-B5AE-557853A3C00D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GIBDemo.Triggers", "GIBDemo.Triggers\GIBDemo.Triggers.csproj", "{771D73CF-7A91-4DC3-B5AE-557853A3C00D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
