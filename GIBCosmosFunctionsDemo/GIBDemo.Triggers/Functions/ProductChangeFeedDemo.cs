@@ -15,7 +15,11 @@ namespace GIBDemo.Triggers.Functions
             databaseName: Constants.COSMOS_DB_DATABASE_NAME,
             collectionName: Constants.COSMOS_DB_CONTAINER_NAME,
             ConnectionStringSetting = Constants.COSMOS_DB_CONNECTION_STRING,
-            LeaseCollectionName = Constants.COSMOS_DB_LEASE_CONTAINER_NAME)]IReadOnlyList<Document> input,
+            LeaseCollectionName = Constants.COSMOS_DB_LEASE_CONTAINER_NAME,
+            CreateLeaseCollectionIfNotExists = true,
+            StartFromBeginning = true,
+            FeedPollDelay = 5,
+            PreferredLocations = "Australia East")]IReadOnlyList<Document> input,
             ILogger log)
         {
             if (input != null && input.Count > 0)

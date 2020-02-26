@@ -20,7 +20,10 @@ namespace GIBDemo.Triggers.Functions
             [CosmosDB(
                 databaseName: Constants.COSMOS_DB_DATABASE_NAME,
                 collectionName: Constants.COSMOS_DB_CONTAINER_NAME,
-                ConnectionStringSetting = Constants.COSMOS_DB_CONNECTION_STRING)] IAsyncCollector<object> products,
+                ConnectionStringSetting = Constants.COSMOS_DB_CONNECTION_STRING,
+            CreateIfNotExists = false,
+            PartitionKey = "/ProductType"
+            )] IAsyncCollector<object> products,
             ILogger log)
         {
             try
