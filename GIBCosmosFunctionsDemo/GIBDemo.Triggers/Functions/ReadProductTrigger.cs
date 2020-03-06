@@ -21,7 +21,7 @@ namespace GIBDemo.Triggers.Functions
             [CosmosDB(
                 databaseName: Constants.COSMOS_DB_DATABASE_NAME,
                 collectionName: Constants.COSMOS_DB_CONTAINER_NAME,
-                ConnectionStringSetting = Constants.COSMOS_DB_CONNECTION_STRING,
+                ConnectionStringSetting = "cosmosConnection",
                 SqlQuery ="SELECT * FROM c WHERE c.id={id} ORDER BY c._ts DESC",
             PreferredLocations = "Australia East")] IEnumerable<Product> productItem,
             ILogger log,

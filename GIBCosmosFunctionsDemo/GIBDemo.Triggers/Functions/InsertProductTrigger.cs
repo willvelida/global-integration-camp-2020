@@ -18,11 +18,12 @@ namespace GIBDemo.Triggers.Functions
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "InsertProductTrigger")] HttpRequest req,
             [CosmosDB(
-                databaseName: Constants.COSMOS_DB_DATABASE_NAME,
-                collectionName: Constants.COSMOS_DB_CONTAINER_NAME,
-                ConnectionStringSetting = Constants.COSMOS_DB_CONNECTION_STRING,
+                databaseName: "Products",
+                collectionName: "Product",
+            ConnectionStringSetting = "cosmosConnection",
             CreateIfNotExists = false,
-            PartitionKey = "/ProductType"
+            PartitionKey = "/ProductType",
+            PreferredLocations = "Australia East"
             )] IAsyncCollector<object> products,
             ILogger log)
         {
@@ -41,6 +42,7 @@ namespace GIBDemo.Triggers.Functions
                 };
 
                 await products.AddAsync(product);
+                await products.FlushAsync();
 
                 return new OkObjectResult(product);
             }

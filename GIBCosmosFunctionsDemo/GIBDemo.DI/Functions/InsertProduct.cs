@@ -34,8 +34,8 @@ namespace GIBDemo.DI.Functions
             _config = config;
             _cosmosClient = cosmosClient;
 
-            _database = _cosmosClient.GetDatabase(_config[Constants.COSMOS_DB_DATABASE_NAME]);
-            _container = _database.GetContainer(_config[Constants.COSMOS_DB_CONTAINER_NAME]);
+            _database = _cosmosClient.GetDatabase("Products");
+            _container = _database.GetContainer("Product");
         }
 
         [FunctionName(nameof(InsertProduct))]
@@ -60,8 +60,7 @@ namespace GIBDemo.DI.Functions
                 };
 
                 ItemResponse<Product> item = await _container.CreateItemAsync(
-                    product,
-                    new PartitionKey(product.ProductType));
+                    product);
 
                 _logger.LogInformation("Item inserted");
                 _logger.LogInformation($"This query cost: {item.RequestCharge} RU/s");
