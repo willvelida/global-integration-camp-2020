@@ -26,7 +26,8 @@ namespace GIBDemo.DI.Helpers
 
             builder.Services.AddSingleton((s) =>
             {
-                CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder("AccountEndpoint=https://velidacosmosdb.documents.azure.com:443/;AccountKey=1MP1FMjkTZcb6Tqz929up9GWp2Tg42wCtKoQdTKxF03Xfq7ETSFUTStQY8UoquHB5w1qevGGSorAuPeEy7E3Tg==");
+                // Provide your own primary connection key
+                CosmosClientBuilder cosmosClientBuilder = new CosmosClientBuilder("");
 
                 return cosmosClientBuilder.WithConnectionModeDirect()
                     .WithApplicationRegion("Australia East")

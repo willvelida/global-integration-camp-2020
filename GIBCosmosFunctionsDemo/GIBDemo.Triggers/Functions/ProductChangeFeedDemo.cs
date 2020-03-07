@@ -11,7 +11,8 @@ namespace GIBDemo.Triggers.Functions
 {
     public static class ProductChangeFeedDemo
     {
-        private static DocumentClient _documentClient = new DocumentClient(new Uri("https://velidacosmosdb.documents.azure.com:443/"), "1MP1FMjkTZcb6Tqz929up9GWp2Tg42wCtKoQdTKxF03Xfq7ETSFUTStQY8UoquHB5w1qevGGSorAuPeEy7E3Tg==");
+        // Provide your own URI and keys
+        private static DocumentClient _documentClient = new DocumentClient(new Uri(""), "");
 
         [FunctionName(nameof(ProductChangeFeedDemo))]
         public static void Run([CosmosDBTrigger(
