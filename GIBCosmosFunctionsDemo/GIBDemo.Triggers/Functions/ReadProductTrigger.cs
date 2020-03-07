@@ -27,12 +27,22 @@ namespace GIBDemo.Triggers.Functions
             ILogger log,
             string id)
         {
-            if (productItem == null)
+            try
             {
-                return new NotFoundResult();
-            }
+                if (productItem == null)
+                {
+                    log.LogInformation($"Could not find a product {id}");
+                    return new NotFoundResult();
+                }
 
-            return new OkObjectResult(productItem);
+                log.LogInformation("Found the product!");
+                return new OkObjectResult(productItem);
+            }
+            catch (Exception ex)
+            {
+                log.LogError($"Something went wrong. Exception thrown: {ex.Message}");
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
         }
     }
 }

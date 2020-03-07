@@ -30,8 +30,10 @@ namespace GIBDemo.Triggers.Functions
                 log.LogInformation("Documents modified " + input.Count);
                 log.LogInformation("First document Id " + input[0].Id);
 
+                // For each document in our list of documents
                 foreach (var document in input)
                 {
+                    // try to persist to our backup collection!
                     try
                     {
                         _documentClient.CreateDocumentAsync(
